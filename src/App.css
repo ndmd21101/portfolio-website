@@ -1,0 +1,150 @@
+@import-normalize;
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+@keyframes hover-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+
+  };
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.ImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Intro{
+  display: inline-block;
+}
+.Body h1{
+  font-size: 40px;
+  margin-left: 100px;
+  color: #000000;
+}
+.Body h2{
+  color: #000000;
+  margin-left: 110px;
+}
+.Body img{
+  margin-right: 100px;
+  margin-top: 50px;
+  transform: scale(0.6);
+  border-radius: 400px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+.Intro h1{
+  font-size: 50px;
+  color: #ffffff;
+}
+.Introduction{
+  margin-top: 100px;
+  margin-right: 175px;
+  margin-left: 1000px;
+  border: 2px solid #ddd; /* Border style */
+  border-radius: 10px; /* Rounded border corners */
+  padding: 20px; /* Add padding for spacing */
+
+}
+
+.Introduction h1 {
+  color:#fff
+}
+.Introduction p{
+  color:#fff;
+  line-height: 1.5;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: x-large;
+  color: #fff;
+  -webkit-text-stroke: 0.5px;
+  /* -webkit-text-stroke-color: #6495ed; */
+  display: flex;
+  justify-content: space-between;
+  justify-content: center; /* Center the links horizontally */
+  padding: 1rem;
+  transition: top 0.5s; /* Add transition for smooth movement */
+  overflow: hidden;
+  line-height: 50px;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Center the links horizontally */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-right: 4rem;
+}
+
+.navbar-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar-links li a {
+  display: inline-block;
+  /* line-height: 10; */
+  border: 1.5px solid; /* Add transparent border to all links */
+  letter-spacing: 5px;
+  border-radius: 300px;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #ffffff;
+  font-size: 30px;
+  border-color: #ffffff;
+  box-shadow: 0 8px 3px rgba(11, 11, 11, 0.78); /* Shadow to create depth */
+
+}
+
+/* Styles for the visible navbar */
+.navbar-visible {
+  top: 0; /* Show the navbar at the top */
+}
+.navbar-links li a:hover {
+  animation: hover-animation 0.5s ease; /* Applying the animation */
+}
+/* Styles for the hidden navbar */
+.navbar-hidden {
+  top: -100px; /* Hide the navbar off the screen */
+}
+
+body {
+	background: linear-gradient(-45deg, #0e3a28, #0c3041, #462433, #5c4f2a);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+
+
+
